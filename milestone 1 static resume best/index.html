@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone1</title>
+    <link rel="stylesheet" href="style.css">
+    <img src="passportsize.jpeg" alt="Profile Picture" class="profile-pic">
+</head>
+<body>
+    <h1>Resume builder by Umer hussain</h1>
+    <form id="resumeForm">
+<fieldset>
+    <legend>Person Information</legend>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"required><br>
+
+    <label for="email">Email: </label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="phone">Phone: </label>
+    <input type="tel" id="phone" name="phone" required><br>
+
+<label for="address">Address: </label>
+    <input type="add" id="adress" name="adress" required><br>
+
+    <label for="religion">Religion: </label>
+    <input type="religion" id="religion" name="religion" required><br>
+
+    <!-- PROFILE PICTURE
+    <label for="profilePicture">profilePicture</label>
+    <input type="file" id="profilePicture" name="profilePicture" accept="image/*"required> -->
+
+<!--PROFILE PICTURE-->
+<label for="profilePicture">Profile Picture></label>
+<input type="file"id="profilePicture"accept="image/*"required>
+
+</fieldset>
+
+<fieldset>
+    <legend>Education</legend>
+    <label for="Education">Education</label>
+    <textarea  id="Education" name="Education" rows="4" required></textarea><br>
+</fieldset>
+
+<fieldset>
+    <legend>Experience</legend>
+    <label for="Experience">Experience</label>
+    <textarea  id="Experience" name="Experience" rows="4" required></textarea><br>
+</fieldset>
+
+<fieldset id="Skills">
+   
+        <legend >Skills</legend>
+    <label for="Skills" >Skills</label>
+    <textarea   name="Skills" rows="4" required></textarea><br>
+   
+    
+</fieldset>
+<button type="submit">Generate Resume below</button>
+    </form>
+     <!-- Add a button to toggle the visibility of the skills section -->
+     <button  id="toggleSkillsButton">Toggle Skills Section</button>
+     
+     <button type="submit">Generate Resume</button>
+ </form>
+
+<script src="main.js"></script>
+
+    
+    
+</body>
+</html>
