@@ -1,16 +1,17 @@
-document.addEventListener('DOMContentLoaded' , ()=>{
-    const toggleButton = document.getElementById("toggleSkillsButton") as HTMLButtonElement;
-    const skillsSection = document.getElementById("Skills") as HTMLElement;
-    const profilePictureInput = document.getElementById(`profilePicture`)as HTMLInputElement;
-const profilePictureFile = profilePictureInput.files?.[0]
-const profilePictureURL = profilePictureFile ? URL.createObjectURL(profilePictureFile):'';
+let skillBtn = document.querySelector("#skills-btn") as HTMLButtonElement;
+let skillList = document.querySelector(".skills") as HTMLElement;
 
-      toggleButton.addEventListener('click',()=>{
-        if (skillsSection.style.display === 'none'){
-          skillsSection.style.display = 'block';
-        } else {
-          skillsSection.style.display = 'none';
-        }
-      })
-     }
-  )
+skillBtn.innerHTML = "Hide Skills";
+
+skillBtn?.addEventListener("click", () => {
+    if (skillList.style.display === "none" || !skillList.style.display) {
+        skillBtn.innerHTML = "Hide Skills"
+        skillList.style.display = "block"
+    }
+    else {
+        skillList.style.display = "none"
+        skillBtn.innerHTML = "Show Skills"
+
+
+    }
+})
