@@ -1,16 +1,13 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var _a;
-    var toggleButton = document.getElementById("toggleSkillsButton");
-    var skillsSection = document.getElementById("Skills");
-    var profilePictureInput = document.getElementById("profilePicture");
-    var profilePictureFile = (_a = profilePictureInput.files) === null || _a === void 0 ? void 0 : _a[0];
-    var profilePictureURL = profilePictureFile ? URL.createObjectURL(profilePictureFile) : '';
-    toggleButton.addEventListener('click', function () {
-        if (skillsSection.style.display === 'none') {
-            skillsSection.style.display = 'block';
-        }
-        else {
-            skillsSection.style.display = 'none';
-        }
-    });
+var skillBtn = document.querySelector("#skills-btn");
+var skillList = document.querySelector(".skills");
+skillBtn.innerHTML = "Hide Skills";
+skillBtn === null || skillBtn === void 0 ? void 0 : skillBtn.addEventListener("click", function () {
+    if (skillList.style.display === "none" || !skillList.style.display) {
+        skillBtn.innerHTML = "Hide Skills";
+        skillList.style.display = "block";
+    }
+    else {
+        skillList.style.display = "none";
+        skillBtn.innerHTML = "Show Skills";
+    }
 });
