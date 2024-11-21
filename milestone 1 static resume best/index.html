@@ -1,73 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milestone1</title>
-    <link rel="stylesheet" href="style.css">
-    <img src="passportsize.jpeg" alt="Profile Picture" class="profile-pic">
-</head>
-<body>
-    <h1>Resume builder by Umer hussain</h1>
-    <form id="resumeForm">
-<fieldset>
-    <legend>Person Information</legend>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"required><br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal CV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <!-- content -->
+        <div class="box1">
+          <div id="hide-img2">
+          </div>
+          <h1
+            style="letter-spacing: 5px; margin-bottom: 20px; text-align: center"
+          >
+            M.Umer Fakih
+          </h1>
+          <h4
+            style="
+              padding: 3px 4px;
+              letter-spacing: 3px;
+              font-size: 15px;
+              text-align: center;
+              background-color: #203183;
+              margin: 40px 0 6px 0;
+              border-radius: 5px;
+            "
+          >
+            Web Developer
+          </h4>
+          <p id="para" style="margin-top: 30px">
+            It's me Umer Hussain,I'm a dedicated and passionate individual on the journey to becoming a web developer, with a deep interest in technology and creativity. Currently, I’m advancing my skills in Next.js and React, and I have a strong foundation in HTML, CSS, and JavaScript, along with an increasing proficiency in TypeScript. I am committed to continuous learning and thrive on projects that not only challenge me but also enhance my technical and creative abilities.
+          </p>
+          <div class="info">
+            <h5 class="head" style="margin-top: 50px; color: white">
+              PERSONAL INFORMATION
+            </h5>
 
-    <label for="email">Email: </label>
-    <input type="email" id="email" name="email" required><br>
+            <div>
+              <h5>DOB:</h5>
+              <p>29-June-2004</p>
+            </div>
+            <div>
+              <h5>PLACE OF BIRTH:</h5>
+              <p>KARACHI</p>
+            </div>
+            <div>
+              <h5>Currently Live In:</h5>
+              <p>Karachi</p>
+            </div>
+            <div>
+              <h5>Address</h5>
+              <p>Gulistane Johar block 7,Karachi</p>
+            </div>
 
-    <label for="phone">Phone: </label>
-    <input type="tel" id="phone" name="phone" required><br>
+            <h3 class="head" style="margin-top: 40px; margin-bottom: 20px">
+              Contact Me
+            </h3>
 
-<label for="address">Address: </label>
-    <input type="add" id="adress" name="adress" required><br>
+            <div style="margin-bottom: 10px">
+              <h5>Phone:</h5>
+              <p>+9231302166756</p>
+            </div>
 
-    <label for="religion">Religion: </label>
-    <input type="religion" id="religion" name="religion" required><br>
+            <div>
+              <h5>Email:</h5>
+              <p>
+                <a
+                  style="color: white; text-decoration: none"
+                  href="mailto:moizaman3623@gmail.com"
+                  >fakihumar82@gmail.com</a
+                >
+              </p>
+            </div>
 
-    <!-- PROFILE PICTURE
-    <label for="profilePicture">profilePicture</label>
-    <input type="file" id="profilePicture" name="profilePicture" accept="image/*"required> -->
+            <div class="icons" style="margin-top: 10px">
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/muhammad-umer-fakih-3a5a642b8/"
+                  style="color: rgb(56, 61, 229)"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <h3 id="icons_manage">LINKEDIN</h3>
+              </div>
+              <div>
+                <a
+                  href="https://github.com/umerfakih56"
+                  style="color: rgb(109, 104, 104)"
+                >
+                  <i class="fa-brands fa-github"></i
+                ></a>
+                <h3 id="icons_manage">GITHUB</h3>
+              </div>
+            </div>
 
-<!--PROFILE PICTURE-->
-<label for="profilePicture">Profile Picture></label>
-<input type="file"id="profilePicture"accept="image/*"required>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 30px;
+              "
+            >
+              <h5 class="head" style="color: rgb(226, 95, 95)">Language</h5>
+              <li style="list-style: square color">ENGLISH</li>
+              <li style="list-style: square">URDU</li>
+            </div>
+          </div>
 
-</fieldset>
+          <div class="about ">
+            <h1>About myself:</h1>
+            <p id="para">  
+                Hello, I am Umer Fakih, a 20-year-old creative professional with a strong foundation in logo design, 3D animation, and graphic design. I specialize in crafting visually compelling and user-centric designs that elevate brand identities. With hands-on expertise in frontend technologies such as HTML, CSS, JavaScript, Next.js, and TypeScript, I develop responsive and high-performance web applications. I am committed to continuous learning and growth, with a keen interest in expanding my skill set into backend development to build full-stack solutions. My goal is to combine my design sensibility with technical proficiency, creating seamless, innovative digital experiences that meet both aesthetic and functional needs. I thrive in dynamic environments and am always eager to take on new challenges to further my expertise in the tech industry.
+            </p>
+          </div>
+          <br/>
 
-<fieldset>
-    <legend>Education</legend>
-    <label for="Education">Education</label>
-    <textarea  id="Education" name="Education" rows="4" required></textarea><br>
-</fieldset>
+          <img
+            class="sign"
+            src="sign.png"
+            loading="lazy"
+            alt="signature"
+          />
+        </div>
 
-<fieldset>
-    <legend>Experience</legend>
-    <label for="Experience">Experience</label>
-    <textarea  id="Experience" name="Experience" rows="4" required></textarea><br>
-</fieldset>
+        <!-- image part -->
+        <div class="box2">
+          <div id="hide-img">
+            <img src="umer profile.jpeg" alt="pic" />
+          </div>
 
-<fieldset id="Skills">
-   
-        <legend >Skills</legend>
-    <label for="Skills" >Skills</label>
-    <textarea   name="Skills" rows="4" required></textarea><br>
-   
-    
-</fieldset>
-<button type="submit">Generate Resume below</button>
-    </form>
-     <!-- Add a button to toggle the visibility of the skills section -->
-     <button  id="toggleSkillsButton">Toggle Skills Section</button>
-     
-     <button type="submit">Generate Resume</button>
- </form>
+          <!-- Education -->
+          <div class="education">
+            <h3 style="letter-spacing: 5px; font-size: 1.6rem">EDUCATION</h3>
+            <div class="education_main">
+              <div class="edu-info">
+                <p id="round"></p>
+                <h4>Matric</h4>
+                <h3>2020 - 2021</h3>
+                <p id="para">
+                  Sadequain Grammer School<br />
+                  in (Science Group)
+                </p>
+              </div>
+              <div class="edu-info">
+                <p id="round"></p>
+                <h4>Intermediate</h4>
+                <h3>2022 - 2023</h3>
+                <p id="para">
+                  Govt degree Sci/Com clg blk-7 gulshan <br />
+                  in (Computer Science)
 
-<script src="main.js"></script>
+                  <p id="round"></p>
+                  <h4>Graduation</h4>
+                  <h3>2024 - 2028</h3>
+                  <p id="para">
+                    Karachi University<br />
+                    in (Public Administration)
+                </p>
+              </div>
+            </div>
+          </div>
 
-    
-    
-</body>
+          <!-- Experience -->
+
+          <div class="experience">
+            <h3 style="letter-spacing: 5px; font-size: 1.3rem">
+              WORK EXPERIENCE
+            </h3>
+            <div class="experience_main">
+              <div id="exp-1">
+                <p id="round2"></p>
+                <h4>FRONTENED DEVELOPER</h4>
+                <h3>2024 - 2025</h3>
+                <p id="para">
+                   
+
+                    "Developed responsive web applications with optimized performance, sophisticated user interfaces, and a focus on UI/UX design principles to deliver engaging, intuitive, and visually appealing user experiences. Collaborated closely with design and development teams to ensure a cohesive and streamlined experience across platforms, enhancing user satisfaction and retention."
+                </p>
+              </div>
+
+              <div id="exp-2">
+                <p id="round2"></p>
+
+                <h4>WEB DEVELOPER</h4>
+                <h3>2024 - 2025</h3>
+                <p id="para">
+                  I'm currently learning full-stack web development with the
+                  goal of becoming a skilled and versatile developer. I am
+                  dedicated to mastering both front-end and back-end
+                  technologies to build impactful and seamless web applications.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="skills-contain">
+            <h2
+              id="skill-heading"
+              style="letter-spacing: 5px; font-size: 1.6rem"
+            >
+              SKILLS
+            </h2>
+
+            <div class="skills">
+              <!-- html -->
+              <div class="html-contain" style="margin: 40px 0 10px">
+                <h3 style="padding-bottom: 6px">HTML</h3>
+                <div class="skills-setup" style="border-radius: 8px">
+                  <div
+                    class="html"
+                    style="
+                      border-radius: 8px;
+                      background-color: rgb(255, 102, 82);
+                      width: 100%;
+                      height: 9px;
+                    "
+                  ></div>
+                </div>
+              </div>
+
+              <!-- CSS -->
+              <div class="CSS-contain" style="margin: 10px 0 20px">
+                <h3 style="padding-bottom: 6px">CSS</h3>
+                <div class="skills-setup" style="border-radius: 8px">
+                  <div
+                    class="html"
+                    style="
+                      border-radius: 8px;
+                      width: 100%;
+                      height: 9px;
+
+                      width: 100%;
+                      background-color: rgb(255, 242, 55);
+                    "
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Javascript -->
+              <div class="Javascript-contain" style="margin: 20px 0 10px">
+                <h3 style="padding-bottom: 6px">JavaScript</h3>
+                <div class="skills-setup" style="border-radius: 8px">
+                  <div
+                    class="javascript"
+                    style="
+                      border-radius: 10px;
+                      background-color: rgb(117, 243, 92);
+                      width: 90%;
+                      height: 9px;
+                    "
+                  ></div>
+                </div>
+              </div>
+
+              <!-- Next.js -->
+              <div class="Next.js-contain" style="margin: 20px 0 10px">
+                <h3 style="padding-bottom: 6px">Next.js</h3>
+                <div class="skills-setup" style="border-radius: 8px">
+                  <div
+                    class="Nextjs"
+                    style="
+                      border-radius: 8px;
+                      background-color: rgb(71, 255, 246);
+                      width: 85%;
+                      height: 9px;
+                    "
+                  ></div>
+                </div>
+              </div>
+
+              <!-- type script -->
+              <div class="React.js-contain" style="margin: 20px 0 10px">
+                <h3 style="padding-bottom: 6px">Type Script</h3>
+                <div class="skills-setup" style="border-radius: 8px">
+                  <div
+                    class="React"
+                    style="
+                      border-radius: 8px;
+                      background-color: rgb(227, 58, 233);
+                      width: 80%;
+                      height: 9px;
+                    "
+                  ></div>
+                </div>
+              </div>
+
+              <!-- TailwindCSS -->
+              <div class="Tailwindcss-contain" style="margin: 20px 0 10px">
+                <h3 style="padding-bottom: 6px">TailwindCSS</h3>
+                <div class="skills-setup" style="border-radius: 8px">
+                  <div
+                    class="Tailwindcss"
+                    style="
+                      border-radius: 8px;
+                      background-color: rgb(255, 46, 192);
+                      width: 95%;
+                      height: 9px;
+                    "
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button id="skills-btn"></button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
